@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+#selectable .ui-selected {background:#F60}
+#selectable .ui-selecting {background:#FC0}
+
+
+#mainMenu ul li
+{
+	list-style:none;
+	float:left;
+	margin-right:20px;
+}
+
+#mainMenu ul li
+{
+
+	display:block;
+	width:100px;
+	height:30px;
+	color:white;
+	background-color:#333333;
+	text-decoration:none;
+	text-align:center;
+	line-height:30px;
+	vertical-align:middle;
+}
+#skin
+{
+	clear:both
+}
+

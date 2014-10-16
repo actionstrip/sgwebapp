@@ -1,0 +1,35 @@
+@charset "utf-8";
+#skinContents {
+	width:800px;
+	height:500px;
+	background:#0CF;	
+}
+
+#skinIframe{
+	clear:both;
+	width:600px;
+	height:400px;
+	background: #66C;
+}
+
+#skinSelectable .ui-selected {background:#F60}
+#skinSelectable .ui-selecting {background:#FC0}
+
+#skinMenu ul li
+{
+	list-style:none;
+	float:left;
+	margin-right:20px;
+}
+#skinMenu ul li
+{
+	display:inline-block;
+	width:100px;
+	color:white;
+	background-color:#333333;
+	text-decoration:none;
+	text-align:center;
+	line-height:30px;
+	vertical-align:middle;
+}
+

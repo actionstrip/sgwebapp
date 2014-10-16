@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SkinA</title>
+
+<link href="css/skinA.css" rel="stylesheet" type="text/css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<script>
+
+ 	$(document).ready(function(){
+		//api.jqueryui.com/selectable/
+		$("#skinSelectable").selectable({
+			selecting:function(event,ui){
+			},
+			selected:function(event,ui){
+				
+				//var str = $(ui.selected).attr("name")
+			}
+		});
+		
+		//$( "#selectable" ).on( "selectableselected", function( event, ui ) {alert("b")} );
+		
+	});
+</script>
+
+
+</head>
+
+<body>
+
+<div id="skinContents">
+    <div id="skinHeader">
+    <p>::Skin A Type::</p>
+    </div>
+    
+    <div id="skinIframe">
+    
+    </div>
+    
+    <div id="skinMenu">
+    	<ul id="skinSelectable">
+            <li name="con1"> 서브1 </li>
+            <li name="con2"> 서브2 </li>
+            <li name="con3"> 서브3 </li>
+            <li name="con4"> 서브4 </li>
+   		</ul>
+    </div>
+    <div id="skinFooter">
+    
+    </div>
+</div>
+
+</body>
+</html>
