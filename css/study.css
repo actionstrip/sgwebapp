@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+html,body{
+	height:100%;	
+}
+#body{
+	height:100%;
+	width:100%;
+	background-color:#FFC;
+}
+
+#header
+{
+	position:relative;
+	height:20px;
+	width:100%;
+	background-color:#06C;
+}
+
+#section
+{
+	height:100%;
+	width:1113px;
+	float:left;
+	background-color:#CCC;
+	margin-top:-20px; /*이렇게 밖에 안되냐.. */
+	z-index:100;
+
+}
+
+#aside
+{
+	height:auto;
+	width:auto;
+	margin-left:1113px;
+	background-color:#69F;
+}
+
+#aside #nav
+{
+	
+	
+}
+
+#selectable .ui-selected {background:#F60}
+#selectable .ui-selecting {background:#FC0}
+
+
+#mainMenu ul li
+{
+	list-style:none;
+	float:left;
+	margin-right:20px;
+}
+
+#mainMenu ul li
+{
+
+	display:block;
+	width:100px;
+	height:30px;
+	color:white;
+	background-color:#333333;
+	text-decoration:none;
+	text-align:center;
+	line-height:30px;
+	vertical-align:middle;
+}
+#skin
+{
+	clear:both
+}
+

@@ -2,8 +2,16 @@
 
 var SGE=SGE || {};
 
-SGE.Param = {};
-SGE.Const = {};
+SGE.Param = {};// 초기 파라메타
+SGE.Const = {};//글로벌 상수
+SGE.Var={};//글로벌 변수
+SGE.mydata={};
+SGE.Inst={}; // 인스턴스 참조 변수들 모아보자.
+
+
+
+
+
 
 (function(SGE){
 	var urlString = location.href;
@@ -51,9 +59,11 @@ SGE.Const = {};
 	SGE.Param.planDe="";
 	SGE.Param.moduleNo="";
 	SGE.Param.studentNo="";
-		
+	SGE.Const.xmlName = "xml/jr_kuk_601_03.xml";	
 	
-	SGE.Const.xmlName = 'http://www.home-learn.com/sigong/student/cmpc/ReNewCStudentContentsListXml.do?subj_lesson_no=' + SGE.Param.subjLessonNo + '%26plan_de=' + SGE.Param.planDe + '%26module_no=' + SGE.Param.moduleNo + "%26student_no=" + SGE.Param.studentNo;
+	//SGE.Const.xmlName = 'http://www.home-learn.com/sigong/student/cmpc/ReNewCStudentContentsListXml.do?subj_lesson_no=' + SGE.Param.subjLessonNo + '%26plan_de=' + SGE.Param.planDe + '%26module_no=' + SGE.Param.moduleNo + "%26student_no=" + SGE.Param.studentNo;
+	
+	
 	SGE.Const.studying = SGE.Param.studying; //Y인 경우는 오늘의 학습 모듈넘버가 있는경우 학습내역 저장, N인경우는 예복습에서 띄우는 경우 학습내역 저장 안함
 	SGE.Const.adminmode = SGE.Param.adminmode; //Y면 관리자에서 띄우는 경우, N이면 예복습이나 오늘의 학습
 	SGE.Const.testMode = "N";
