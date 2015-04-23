@@ -105,7 +105,12 @@ SGE.onCompleteLoadContent=function($Method){
 
 	trace("SGE.onCompleteLoadSkin");
 	
-	trace("$Method.getFileName- " , $Method.getFileName());
+	//trace("$Method.getFileName- " , $Method.getFileName());
+	$Method.setNum(1);
+	//$Method.setAnswer('["0"]');
+	//$Method.verify();
+	
+	
 	/*
 	var fileName = $innerWindow.getFileName();
 	trace("fileName-" , fileName);*/

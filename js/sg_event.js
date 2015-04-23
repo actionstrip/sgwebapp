@@ -49,7 +49,8 @@ function Event_StartLoadContent(e, $nextSubNum){
 	//SGE.Var.currentSkinStr // 현재스킨 스트링.  read , test, realize
 	
 	
-	var fileUrl="contents/" + SGE.mydata.httpURL + "/" + SGE.mydata.studyCode + "_" + SGE.Var.currentSkinStr + "_" + SGE.Class.core.Utils.getStringChipher($nextSubNum) +".html";
+	var filePath="contents/" + SGE.mydata.httpURL + "/" + SGE.mydata.studyCode + "_" + SGE.Var.currentSkinStr + "_" + SGE.Class.core.Utils.getStringChipher($nextSubNum) + "/";
+	var fileUrl=filePath + "index.html";
 	//filename=  jr_kuk_6-1/jr_kuk_601_03/jr_kuk_601_03_test.html
 	
 	trace("filename= " , fileUrl);
