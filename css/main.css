@@ -1,10 +1,26 @@
 /* CSS Document */
 
-html ,body {
-	width: 100%;
+html ,body , #skin{
 	height: 100%;
 }
+
+html,body{
+/*	max-width:1336px;*/
+	overflow:hidden;
+}
+
+#skin-container-other{
+	position:absolute;
+	z-index:10;
+	top:0;
+	
+}
+
 #spinner{
 	z-index:9999;
 		
+}
+
+#temp{
+	display:none;
 }

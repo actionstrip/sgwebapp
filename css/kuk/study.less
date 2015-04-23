@@ -1,0 +1,260 @@
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+
+@study-img-path:"../../images/kuk/";
+
+@study-header-height:40px;
+@study-header-z:10;
+@study-section-width:1113px;
+
+@study-nav-li-height:50px;
+
+@study-iframe-width:1113px;
+@study-iframe-height:640px;
+@study-iframe-color:#15532F;
+
+@study-paging-height:40px;
+@study-paging-color:#0E6017;
+@study-paging-z:3;
+	
+@study-aside-color:#69F;
+
+@study-menu-default-color:#19F0CB; /* 메인메뉴 기본 bg*/
+@study-menu-selected-color:#00ff00;/* 메인메뉴 선택시 bg*/
+@study-menu-disabled-color:#cccccc;/* 메인메뉴 비활성시 bg*/
+
+
+@study-paging-li-height:@study-paging-height; /* 페이징 숫자 버튼 height*/
+@study-paging-li-width:@study-paging-height; /* 페이징 숫자 버튼 width*/
+@study-paging-li-default-color:#19F0CB; /* 메인메뉴 기본 bg*/
+@study-paging-li-selected-color:#00ff00;/* 메인메뉴 선택시 bg*/
+@study-paging-li-disabled-color:#333333;/* 메인메뉴 비활성시 bg*/
+
+
+#study-skin{
+	 
+	height:100%;
+	width:100%;
+	background-color:#FFC;
+
+
+	#header
+	{
+		position:relative;
+		height:@study-header-height;
+		width:100%;
+		background-color:#06C;
+		z-index:@study-header-z;
+			
+		#title{
+			color:#FFFFFF;
+		}
+		
+	}
+	
+
+	
+	#content{
+		position:fixed;
+		top:0;
+		height:100%;
+		width:100%;
+
+			#section
+			{
+				
+				position:absolute;
+				height:100%;
+				width:(@study-section-width);
+				float:left;
+				background-color:#CCC;
+				
+				#iframe-content
+				{
+					
+					position:absolute;
+					top:@study-header-height;
+					width:@study-iframe-width;
+					height:@study-iframe-height;
+					background-color:@study-iframe-color;
+					
+/*					visibility:hidden;*/
+					overflow: hidden;
+					
+				}
+				
+				#paging
+				{
+					position:absolute; 
+					bottom:0;
+					width:@study-iframe-width;
+					height:@study-paging-height;
+					background-color:@study-paging-color;
+					z-index:@study-paging-z;
+					
+					#page-prev
+					{
+						a{
+							text-align: center;
+							text-decoration: none;
+							text-transform: uppercase;
+							vertical-align:middle;
+							display: block;
+							background-color:@study-paging-li-default-color;
+						}
+						line-height:(@study-paging-li-height);
+						width:(@study-paging-li-width);
+						height:(@study-paging-li-height);
+						float:left;	
+						background-color:#ff0000;
+					}
+					#page-next
+					{
+						a{
+							text-align: center;
+							text-decoration: none;
+							text-transform: uppercase;
+							vertical-align:middle;
+							display: block;
+							background-color:@study-paging-li-default-color;
+						}
+						line-height:(@study-paging-li-height);
+						width:(@study-paging-li-width);
+						height:(@study-paging-li-height);
+						background-color:#ff0000;
+						float:right;	
+					}
+					#navsub
+					{
+
+							width:100%;
+							height:@study-paging-height;
+;							margin: 0 auto;
+							background-color:#0000ff;
+							
+							text-align:center;				
+							
+						 #selectable
+						{
+
+							display:inline-table;							
+							background-color:#F90206;
+							width:auto;
+							height:@study-paging-height;
+
+					
+							li
+							{
+								display: table-cell; /* 이놈때문에 줄이 어긋나던거다*/ 
+								
+								float:left;
+								width:(@study-paging-li-width);
+								height:(@study-paging-li-height);
+								line-height:(@study-paging-li-height);
+								border-style:solid;
+								border-width:1px;
+								list-style:none;	
+								background-color:#C53AD8;
+								
+								
+								a{
+									
+									display: block;
+									color:white; 
+									text-align: center;
+									text-decoration: none;
+									text-transform: uppercase;
+									vertical-align:middle;
+									background-color:@study-paging-li-default-color;
+									
+								 }
+								 
+								 .selected {
+										pointer-events: none;
+										cursor: default;
+										color:#000000;
+										background-color:@study-paging-li-selected-color;
+								}
+								.disabled {
+									pointer-events: none;
+									color:white;
+									cursor: default;
+									background-color:@study-paging-li-disabled-color;
+								}
+								 
+								
+							} /*    */
+						
+						} /* #selectable */
+					} /* #navsub*/
+					
+				} /* paging */
+			} /* section */
+					
+			#aside 
+			{
+				padding-top:@study-header-height;
+				
+				left:@study-section-width;
+				height:100%;
+				width:auto;
+				margin-left:(@study-section-width);
+				background-color:@study-aside-color;
+				
+
+				
+				#nav{
+
+					top:@study-header-height;
+					
+					
+					
+					ul li
+					{
+						display: table;
+						width:100%;
+						border-style:solid;
+						border-width:thin;
+						list-style:none;
+						height:(@study-nav-li-height);
+						background-color:#C53AD8;
+						
+						a{
+							display: table-cell;
+						    width: auto;
+							color:white; 
+							text-align: center;
+							text-decoration: none;
+							text-transform: uppercase;
+							vertical-align:middle;
+							background-color:@study-menu-default-color;
+							
+							
+							
+						 }
+						 
+						 .selected {
+								pointer-events: none;
+								cursor: default;
+								color:#000000;
+								background-color:@study-menu-selected-color;
+						}
+						.disabled {
+							pointer-events: none;
+							color:white;
+							cursor: default;
+							background-color:@study-menu-disabled-color;
+						}
+						 
+						
+					}
+				} /*#nav*/
+			} /*#aside */
+	} /*#content*/
+	
+	
+	
+} /*#study-skin*/

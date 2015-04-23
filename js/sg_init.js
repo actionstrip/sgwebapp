@@ -1,17 +1,15 @@
+﻿
 
-SGE.Const.SKININTRO = "intro";
-SGE.Const.SKINSTUDY = "study";
-SGE.Const.SKINREAD = "read";
-SGE.Const.SKINSTRONG = "strong";
-SGE.Const.SKINREALIZE = "realize";
-SGE.Const.SKINTEST = "test";
-
-//-------------------------------------------------------------------------------------
 $(document).ready(function(){
 	
 	SGE.setSpinner();
+	SGE.loadMetaXml();
 		
+});
+
+SGE.loadMetaXml=function(){
 	// 메타 xml 로딩 시작
+	/*
 	$.ajax({
 		type:"GET",
 		url:SGE.Const.xmlName,
@@ -20,11 +18,52 @@ $(document).ready(function(){
 		error:function(xhr,status,error){
 			console.log(status,error);	
 		}
-	});
-
+	})*/
 	
-});
-
+	// 테스트일땐 에러창 한번 보자
+	var url = (SGE.Const.testMode == "Y")? "xxx.xml" : SGE.Const.xmlName;
+	
+	var deferred =  $.ajax({
+		type:"GET",
+		url:url,
+		cache: false,
+		dataType:"xml",
+	}).done(function(data){
+		SGE.parseMetaXml(data);
+	}).fail(function(data){
+		console.log(data);	
+		SGE.openErrorPop("meta_xml");
+	});
+}
+SGE.openErrorPop=function(str){
+	
+	switch(str){
+		
+		// 메타 로딩 실패시 
+		case "meta_xml":		
+			$( "#dialog-load-error" ).dialog({
+			  resizable: false,
+			  height:200,
+			  modal: true,
+			  buttons: {
+				"재시도": function() {
+				  $( this ).dialog( "close" );
+				  
+				  SGE.Const.testMode = "N" // 재시도는 성공해야한다.
+				  SGE.loadMetaXml();
+				},
+				"종료": function() {
+				  $( this ).dialog( "close" );
+				  trace("앱 종료시켜주세요");
+				}
+			  }
+			});	
+		break;
+			
+	}
+}
+	
+	
 
 function trace(obj){
 	//console.log(obj);	
@@ -117,6 +156,56 @@ SGE.parseMetaXml=function(xml){
 
 	SGE.mydata.page = $xml.find("content").attr("title").split("|")[1];
 	
+	SGE.mydata.itemNumObj={};
+	SGE.mydata.content = {
+		
+		title:$xml.find("content").attr("title").split("|")[0],
+		items:(function(){
+					var arr = [];
+					var movieflag = false;
+					var summaryflag = false;
+										
+					//for each(var o in $xml.content.*){
+					$xml.find('item').each(function(){
+						var type = $(this).attr('type');
+						var page = $(this).attr('page');
+						var code = $(this).attr('code');
+						
+						var obj = {type:String(type), page:parseInt(page), code:String(code)};
+						
+						var str
+						var jobj
+						//각 메인메뉴에 하위태그가 있다면 루프
+						var jsonTags="movie,summary,menutitle,menugroup";
+						
+						//for each(var p in o.*){
+						$(this).children().each(function(idx){
+						
+							var pname = this.tagName;
+							trace("pname ==== " + pname + "/" +jsonTags.indexOf(pname));
+							if(jsonTags.indexOf(pname) > -1){
+								str = $(this).text();
+								if(str != ""){
+									if(!movieflag) movieflag = true;
+									//trace("str = " + str);
+									jobj = JSON.parse(str);
+									//trace("jobj = " + jobj);
+								}
+								
+								obj[pname + "List"] = jobj;
+							}
+						});
+						
+						SGE.mydata.itemNumObj[type] = arr.length;
+						
+						arr.push(obj)
+					});
+					return arr;
+					
+			})()
+
+		
+	}
 	
 	trace("SGE.mydata == " , SGE.mydata);
 
@@ -131,60 +220,39 @@ SGE.getGradeForm=function($grade){
 // 메타 데이터 파싱이 끝났다.  다음엔 모하진
 SGE.onCompleteParseMetaXml=function(){
 	trace("SGE.onCompleteParseMetaXml");
-	SGE.loadSkin(SGE.Const.SKININTRO,"#container","#container");
+
+
 	
-//	loadStudySkin();
+	SGE.loadStyle(SGE.mydata.subject);
+	
+	//SGE.loadSkin(SGE.Const.SKININTRO,"#intro-skin","#skin");
+	SGE.Event.trigger( SGE.Event.Const.StartLoadSkin, SGE.Const.SKININTRO );
+	
+	// iframe setting  아이프레임 관련 셋팅이다.
+
+
 }
 //----------------------------------------------------------------------------------------------------------------
 
-SGE.Var.currentSkinStr = null;
-SGE.Var.nextSkinStr = null;
-	
-
 /*
-스킨로드
-@param str  스킨이름
-@param $copyId  로드하는 스킨 html 에서 복사할 태그의 id
-@param $pasteId 붙여넣을 태그의 id
-*/
-SGE.loadSkin=function(str , $copyId,$pasteId){
-	trace("SGE.loadSkin");
-	
-	SGE.Var.nextSkinStr = str;
+ 해당과목의 스타일시트 로딩
+ @param $subject
+ */
+SGE.loadStyle=function($subject){
 
-	if(SGE.Var.currentSkinStr && SGE.Var.currentSkinStr != "study"){// study 로딩할땐 예외다.
-		SGE.removeCurrentSkin();
+	var skinStyleUrl= "css/" + $subject + "/" + "style.css";
+	if (document.createStyleSheet){
+	    document.createStyleSheet(skinStyleUrl);
+	}else{
+	    $('<link rel="stylesheet" type="text/css" href="' + skinStyleUrl + '" />').appendTo('head'); 
 	}
 
-
-	var skinId = str + "css";
-	var skinStyleUrl= "skins/" + SGE.mydata.subject + "/" + str + ".css";
-	$('head').append( $('<link rel="stylesheet" type="text/css"' + 'id="' + skinId + '" />').attr('href', skinStyleUrl) );
-	
-
-	var skinUrl = 	"skins/" + SGE.mydata.subject + "/skin_" + str + ".html  " + $copyId;
-	//console.log("skinUrl=" + skinUrl);
-	$($pasteId).load(skinUrl,function(txt,txtStatus,xhr){
-		trace("onComplete skin load");
-		//SGE.setSkin(this);
-		SGE.onCompleteLoadSkin(this);
-	});
-
-
-}
-SGE.removeCurrentSkin=function(){
-	// 일단 css 지워라.
-	$("#"+SGE.Var.currentSkin+"css").remove();// remove skin style
 }
 
-SGE.onCompleteLoadSkin=function(el){
-	
-	trace("SGE.onCompleteLoadSkin");
-	SGE.Var.currentSkinStr = SGE.Var.nextSkinStr;
-	
-	var currentSkinInst = SGE.getSkinClassInstance(SGE.Var.currentSkinStr)
-	currentSkinInst.setStage(el);
-	
-}
+
+//----------------------------------------------------------------------------------------------------------------
+
+
+
 //------------------------------------------------------------------------------
 

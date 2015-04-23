@@ -1,0 +1,65 @@
+/* Compiled Less CSS File */
+/* Generated from "strong.css" */
+
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+#strong-skin {
+  height: 100%;
+  width: 100%;
+  /*background-color:#FFC;*/
+
+}
+#strong-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#strong-skin #content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#strong-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#strong-skin #content #section #iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@strong-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #553cf5;
+}
+#strong-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#strong-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}

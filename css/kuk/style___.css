@@ -1,0 +1,26 @@
+/* Compiled Less CSS File */
+/* Generated from "style.css" */
+
+/* LESS Document */
+/* LESS Document */
+/* bg 컬리 */
+/* 제목 컬리 */
+/* 단원명 컬리 */
+#intro-skin {
+  height: 100%;
+}
+#intro-skin #container {
+  height: 100%;
+  background-color: #ff9900;
+}
+#intro-skin #title {
+  color: #0099cc;
+}
+#intro-skin #unit {
+  color: #00ff00;
+}
+#intro-skin #char {
+  width: 278px;
+  height: 268px;
+  background-image: url('../../images/kuk/char.png');
+}

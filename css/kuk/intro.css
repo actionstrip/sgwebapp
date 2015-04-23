@@ -1,0 +1,29 @@
+/* Compiled Less CSS File */
+/* Generated from "intro.css" */
+
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+/* bg 컬리 */
+/* 제목 컬리 */
+/* 단원명 컬리 */
+#intro-skin {
+  height: 100%;
+}
+#intro-skin #container {
+  height: 100%;
+  background-color: #ff9900;
+}
+#intro-skin #title {
+  color: #0099cc;
+}
+#intro-skin #unit {
+  color: #00ff00;
+}
+#intro-skin #char {
+  width: 278px;
+  height: 268px;
+  background-image: url('../../images/kuk/char.png');
+}
