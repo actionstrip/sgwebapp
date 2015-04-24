@@ -1,15 +1,16 @@
 $(document).ready(function(){
 	//api.jqueryui.com/selectable/
+/*
 	$("#selectable").selectable({
 		selected:function(event,ui){
 			var str = $(ui.selected).attr("name")
 			SGE.loadSkin(str);
 		}
-	});	
+	});	*/
 });
 
 
-var SGE={};
+var SGE=SGE || {};
 SGE.currentSkinType
 
 SGE.log=function(str){

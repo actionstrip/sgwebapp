@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<main summaryURL="skuk601_01" httpURL="jr_kuk_6-1/jr_kuk_601_03" cdnURL="" uploadURL="http://www.home-learn.com/sigong/student/todaystudy/popup/ex/UpdateProcess.do">
+  <intro title="6-1" unit="1단원. 비유적 표현" />
+  <content title="3장 비유적 표현을 생각하며 이야기 읽고 글의 내용 요약하기 | 158~125쪽">
+    <item type="open" page="5" code="9918" />
+    <item type="read" page="2" code="9919">
+      <movie><![CDATA[[[]]]]></movie>
+      <summary><![CDATA[[["skuk301_0100_02_001.swf","2131224i4214484"],["skuk301_0100_02_001_end.swf","2131224i4214484"]]]]></summary>
+    </item>
+    <item type="realize" page="2" code="9920">
+      <movie>[["mov/Jr_kuk_601_03_realize_01.mp4"],["mov/Jr_kuk_601_03_realize_02.mp4"]]</movie>
+    </item>
+    <item type="summary" page="2" code="9921">
+      <summary><![CDATA[[["skuk301_0100_02_001.swf","2131224i4214484"],["skuk301_0100_02_001_end.swf","2131224i4214500"]]]]></summary>
+    </item>
+    <item type="test" page="3" code="9922">
+      <movie><![CDATA[[["mov/Jr_kuk_601_03_test_01.mp4"],["mov/Jr_kuk_601_03_test_02.mp4"],["mp4:data/origin_img/2014/01/03/2140103r581531.mp4"],["mp4:data/origin_img/2014/01/03/2140103r581562.mp4"]]]]></movie>
+    </item>
+  </content>
+  <data><![CDATA[]]></data>
+  <dictionary>[["국경",160098],["위협",160103],["역수",160100],["폐지",160097],["뿌유스레한",160104],["벌그데데한",160101],["낯빛",160099],["잰걸음",160102],["큰코다칠",160102],["쪽빛",160102],["단칸방",160102],["토성",160102],["목성",160102]]</dictionary>
+</main>

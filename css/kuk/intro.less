@@ -1,0 +1,33 @@
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+
+
+@intro-img-path:"../../images/kuk/";
+@intro-background-color:#F90;	/* bg 컬리 */
+@intro-title-color:#09C;	/* 제목 컬리 */
+@intro-unit-color:#00ff00; /* 단원명 컬리 */
+
+#intro-skin{
+	height: 100%;
+	
+	#container {
+		height: 100%;
+		background-color:@intro-background-color;
+	}
+	
+	#title{
+		color:@intro-title-color;
+	}
+	
+	#unit{
+		color:@intro-unit-color;
+	}
+	
+	#char{width: 278px;
+		height: 268px;
+		background-image: url('@{intro-img-path}char.png');
+	}
+}

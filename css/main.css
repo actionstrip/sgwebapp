@@ -1,31 +1,34 @@
-@charset "utf-8";
+/* CSS Document */
 
-#selectable .ui-selected {background:#F60}
-#selectable .ui-selecting {background:#FC0}
-
-
-#mainMenu ul li
-{
-	list-style:none;
-	float:left;
-	margin-right:20px;
+html ,body , #skin{
+	height: 100%;
 }
 
-#mainMenu ul li
-{
-
-	display:block;
-	width:100px;
-	height:30px;
-	color:white;
-	background-color:#333333;
-	text-decoration:none;
-	text-align:center;
-	line-height:30px;
-	vertical-align:middle;
-}
-#skin
-{
-	clear:both
+html,body{
+/*	max-width:1336px;*/
+	overflow:hidden;
 }
 
+#skin-container-other{
+	position:absolute;
+	z-index:10;
+	top:0;
+	
+
+}
+
+#spinner{
+	z-index:9999;
+		
+}
+
+#temp{
+	display:none;
+}
+
+.mouse-disable{
+	pointer-events: none;
+}
+.mouse-enable{
+	pointer-events: auto;
+}

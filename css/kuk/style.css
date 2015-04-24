@@ -1,0 +1,596 @@
+/* Compiled Less CSS File */
+/* Generated from "style.css" */
+
+/* LESS Document */
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+/* bg 컬리 */
+/* 제목 컬리 */
+/* 단원명 컬리 */
+#intro-skin {
+  height: 100%;
+}
+#intro-skin #container {
+  height: 100%;
+  background-color: #ff9900;
+}
+#intro-skin #title {
+  color: #0099cc;
+}
+#intro-skin #unit {
+  color: #00ff00;
+}
+#intro-skin #char {
+  width: 278px;
+  height: 268px;
+  background-image: url('../../images/kuk/char.png');
+}
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+/* 메인메뉴 기본 bg*/
+/* 메인메뉴 선택시 bg*/
+/* 메인메뉴 비활성시 bg*/
+/* 페이징 숫자 버튼 height*/
+/* 페이징 숫자 버튼 width*/
+/* 메인메뉴 기본 bg*/
+/* 메인메뉴 선택시 bg*/
+/* 메인메뉴 비활성시 bg*/
+#study-skin {
+  height: 100%;
+  width: 100%;
+  background-color: #FFC;
+  /*#content*/
+
+}
+#study-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background-color: #06C;
+  z-index: 10;
+}
+#study-skin #header #title {
+  color: #FFFFFF;
+}
+#study-skin #content {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* section */
+
+  /*#aside */
+
+}
+#study-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  background-color: #CCC;
+  /* paging */
+
+}
+#study-skin #content #section #iframe-content {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  background-color: #15532f;
+  /*					visibility:hidden;*/
+
+  overflow: hidden;
+}
+#study-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  background-color: #0e6017;
+  z-index: 3;
+  /* #navsub*/
+
+}
+#study-skin #content #section #paging #page-prev {
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  float: left;
+  background-color: #ff0000;
+}
+#study-skin #content #section #paging #page-prev a {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  display: block;
+  background-color: #19f0cb;
+}
+#study-skin #content #section #paging #page-next {
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #ff0000;
+  float: right;
+}
+#study-skin #content #section #paging #page-next a {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  display: block;
+  background-color: #19f0cb;
+}
+#study-skin #content #section #paging #navsub {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #0000ff;
+  text-align: center;
+  /* #selectable */
+
+}
+#study-skin #content #section #paging #navsub #selectable {
+  display: inline-table;
+  background-color: #F90206;
+  width: auto;
+  height: 40px;
+  /*    */
+
+}
+#study-skin #content #section #paging #navsub #selectable li {
+  display: table-cell;
+  /* 이놈때문에 줄이 어긋나던거다*/
+  float: left;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-style: solid;
+  border-width: 1px;
+  list-style: none;
+  background-color: #C53AD8;
+}
+#study-skin #content #section #paging #navsub #selectable li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: #19f0cb;
+}
+#study-skin #content #section #paging #navsub #selectable li .selected {
+  pointer-events: none;
+  cursor: default;
+  color: #000000;
+  background-color: #00ff00;
+}
+#study-skin #content #section #paging #navsub #selectable li .disabled {
+  pointer-events: none;
+  color: white;
+  cursor: default;
+  background-color: #333333;
+}
+#study-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  background-color: #6699ff;
+  /*#nav*/
+
+}
+#study-skin #content #aside #nav {
+  top: 40px;
+}
+#study-skin #content #aside #nav ul li {
+  display: table;
+  width: 100%;
+  border-style: solid;
+  border-width: thin;
+  list-style: none;
+  height: 50px;
+  background-color: #C53AD8;
+}
+#study-skin #content #aside #nav ul li a {
+  display: table-cell;
+  width: auto;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background-color: #19f0cb;
+}
+#study-skin #content #aside #nav ul li .selected {
+  pointer-events: none;
+  cursor: default;
+  color: #000000;
+  background-color: #00ff00;
+}
+#study-skin #content #aside #nav ul li .disabled {
+  pointer-events: none;
+  color: white;
+  cursor: default;
+  background-color: #cccccc;
+}
+/*#study-skin*/
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+#test-skin {
+  height: 100%;
+  width: 100%;
+  /*background-color:#FFC;*/
+
+}
+#test-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#test-skin #content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#test-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#test-skin #content #section #iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@test-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #ffff00;
+}
+#test-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#test-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+#read-skin {
+  height: 100%;
+  width: 100%;
+  /*background-color:#FFC;*/
+
+}
+#read-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#read-skin #content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#read-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#read-skin #content #section #iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@read-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #ad4ad3;
+}
+#read-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#read-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+#realize-skin {
+  height: 100%;
+  width: 100%;
+  /*background-color:#FFC;*/
+
+}
+#realize-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#realize-skin #content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#realize-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#realize-skin #content #section #iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@realize-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #c9164e;
+}
+#realize-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#realize-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+#summary-skin {
+  height: 100%;
+  width: 100%;
+  /*background-color:#FFC;*/
+
+}
+#summary-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#summary-skin #content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#summary-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#summary-skin #content #section #iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@summary-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #f09625;
+}
+#summary-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#summary-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+#open-skin {
+  height: 100%;
+  width: 100%;
+  /*background-color:#FFC;*/
+
+}
+#open-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#open-skin #content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#open-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#open-skin #content #section #iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@open-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #1ebc11;
+}
+#open-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#open-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}
+/* LESS Document */
+/*
+style.css 에서 통합되므로
+모든변수에는 스킨 접두어를 사용해야합니다.
+*/
+#strong-skin {
+  height: 100%;
+  width: 100%;
+  /*background-color:#FFC;*/
+
+}
+#strong-skin #header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#strong-skin #content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#strong-skin #content #section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#strong-skin #content #section #iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@strong-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #553cf5;
+}
+#strong-skin #content #section #paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#strong-skin #content #aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}
