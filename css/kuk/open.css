@@ -9,57 +9,7 @@ style.css 에서 통합되므로
 #open-skin {
   height: 100%;
   width: 100%;
-  /*background-color:#FFC;*/
-
 }
-#open-skin #header {
-  position: relative;
-  height: 40px;
-  width: 100%;
-  /*background-color:#06C;*/
-
-  z-index: 10;
-}
-#open-skin #content {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-#open-skin #content #section {
-  position: absolute;
-  height: 100%;
-  width: 1113px;
-  float: left;
-  /*background-color:#CCC;*/
-
-}
-#open-skin #content #section #iframe {
-  position: absolute;
-  top: 40px;
-  width: 1113px;
-  height: 640px;
-  /*background-color:@open-iframe-color;*/
-
-  border-style: dotted;
-  border-width: medium;
+#open-skin #skin-content #skin-section #skin-iframe {
   border-color: #1ebc11;
-}
-#open-skin #content #section #paging {
-  position: absolute;
-  bottom: 0;
-  width: 1113px;
-  height: 40px;
-  /*background-color:@paging-color;*/
-
-  z-index: 3;
-}
-#open-skin #content #aside {
-  padding-top: 40px;
-  left: 1113px;
-  height: 100%;
-  width: auto;
-  margin-left: 1113px;
-  /*background-color:@aside-color;*/
-
 }

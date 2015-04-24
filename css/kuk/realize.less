@@ -3,93 +3,19 @@
 style.css 에서 통합되므로
 모든변수에는 스킨 접두어를 사용해야합니다.
 */
-@realize-img-path:"../../images/kuk/";
 
-@realize-header-height:40px;
-@realize-header-z:10;
-@realize-section-width:1113px;
-
-@realize-nav-li-height:50px;
-
-@realize-iframe-width:1113px;
-@realize-iframe-height:640px;
 @realize-iframe-color:#C9164E;
-
-@realize-paging-height:40px;
-@realize-paging-color:#0E6017;
-@realize-paging-z:3;
-	
-@realize-aside-color:#69F;
-
 
 #realize-skin{
 	 
 	height:100%;
 	width:100%;
 	/*background-color:#FFC;*/
-
-
-	#header
+	
+	#skin-content #skin-section #skin-iframe 
 	{
-		position:relative;
-		height:@realize-header-height;
-		width:100%;
-		/*background-color:#06C;*/
-		z-index:@realize-header-z;
-		
-	}
-	
-	#content{
-		position:absolute;
-		top:0;
-		height:100%;
-		width:100%;
-
-		#section
-		{
-			
-			position:absolute;
-			height:100%;
-			width:(@realize-section-width);
-			float:left;
-			/*background-color:#CCC;*/
-			
-			#iframe
-			{
-				position:absolute;
-				top:@realize-header-height;
-				width:@realize-iframe-width;
-				height:@realize-iframe-height;
-				/*background-color:@realize-iframe-color;*/
-				
-				border-style:dotted;
-				border-width:medium;
-				border-color:@realize-iframe-color;
-				
-			}
-			#paging
-			{
-				position:absolute;
-				bottom:0;
-				width:@realize-iframe-width;
-				height:@realize-paging-height;
-				/*background-color:@paging-color;*/
-				z-index:@realize-paging-z;
-			}
-		}
-				
-		#aside 
-		{
-			padding-top:@realize-header-height;
-			
-			left:@realize-section-width;
-			height:100%;
-			width:auto;
-			margin-left:(@realize-section-width);
-			/*background-color:@aside-color;*/
-			
-
-		}
+		border-color:@realize-iframe-color;
 	}	
-	
 }
+
+
