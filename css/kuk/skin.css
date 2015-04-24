@@ -1,0 +1,59 @@
+/* Compiled Less CSS File */
+/* Generated from "skin.css" */
+
+/* LESS Document */
+/*
+스킨에서 공통으로 사용할 css 입니다.
+스터디의 레이아웃을 복사한 형태입니다.
+*/
+#skin-header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  /*background-color:#06C;*/
+
+  z-index: 10;
+}
+#skin-content {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+#skin-content #skin-section {
+  position: absolute;
+  height: 100%;
+  width: 1113px;
+  float: left;
+  /*background-color:#CCC;*/
+
+}
+#skin-content #skin-section #skin-iframe {
+  position: absolute;
+  top: 40px;
+  width: 1113px;
+  height: 640px;
+  /*background-color:@skin-iframe-color;*/
+
+  border-style: dotted;
+  border-width: medium;
+  border-color: #1ebc11;
+}
+#skin-content #skin-section #skin-paging {
+  position: absolute;
+  bottom: 0;
+  width: 1113px;
+  height: 40px;
+  /*background-color:@paging-color;*/
+
+  z-index: 3;
+}
+#skin-content #skin-aside {
+  padding-top: 40px;
+  left: 1113px;
+  height: 100%;
+  width: auto;
+  margin-left: 1113px;
+  /*background-color:@aside-color;*/
+
+}

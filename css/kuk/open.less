@@ -3,94 +3,21 @@
 style.css 에서 통합되므로
 모든변수에는 스킨 접두어를 사용해야합니다.
 */
-@open-img-path:"../../images/kuk/";
 
-@open-header-height:40px;
-@open-header-z:10;
-@open-section-width:1113px;
 
-@open-nav-li-height:50px;
-
-@open-iframe-width:1113px;
-@open-iframe-height:640px;
 @open-iframe-color:#1EBC11;
 
-@open-paging-height:40px;
-@open-paging-color:#0E6017;
-@open-paging-z:3;
-	
-@open-aside-color:#69F;
 
 
 #open-skin{
 	 
 	height:100%;
 	width:100%;
-	/*background-color:#FFC;*/
 
-
-	  
-	#header
+	#skin-content #skin-section #skin-iframe
 	{
-		position:relative;
-		height:@open-header-height;
-		width:100%;
-		/*background-color:#06C;*/
-		z-index:@open-header-z;
-		
+		border-color:@open-iframe-color;
 	}
 	
-	#content{
-		position:absolute;
-		top:0;
-		height:100%;
-		width:100%;
-
-		#section
-		{
-			
-			position:absolute;
-			height:100%;
-			width:(@open-section-width);
-			float:left;
-			/*background-color:#CCC;*/
-			
-			#iframe
-			{
-				position:absolute;
-				top:@open-header-height;
-				width:@open-iframe-width;
-				height:@open-iframe-height;
-				/*background-color:@open-iframe-color;*/
-				
-				border-style:dotted;
-				border-width:medium;
-				border-color:@open-iframe-color;
-				
-			}
-			#paging
-			{
-				position:absolute;
-				bottom:0;
-				width:@open-iframe-width;
-				height:@open-paging-height;
-				/*background-color:@paging-color;*/
-				z-index:@open-paging-z;
-			}
-		}
-				
-		#aside 
-		{
-			padding-top:@open-header-height;
-			
-			left:@open-section-width;
-			height:100%;
-			width:auto;
-			margin-left:(@open-section-width);
-			/*background-color:@aside-color;*/
-			
-
-		}
-	}	
-	
 }
+

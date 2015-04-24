@@ -1,0 +1,88 @@
+/* LESS Document */
+/*
+스킨에서 공통으로 사용할 css 입니다.
+스터디의 레이아웃을 복사한 형태입니다.
+*/
+@skin-img-path:"../../images/kuk/";
+
+@skin-header-height:40px;
+@skin-header-z:10;
+@skin-section-width:1113px;
+
+@skin-nav-li-height:50px;
+
+@skin-iframe-width:1113px;
+@skin-iframe-height:640px;
+@skin-iframe-color:#1EBC11;
+
+@skin-paging-height:40px;
+@skin-paging-color:#0E6017;
+@skin-paging-z:3;
+	
+@skin-aside-color:#69F;
+
+
+	   
+#skin-header
+{
+	position:relative;
+	height:@skin-header-height;
+	width:100%;
+	/*background-color:#06C;*/
+	z-index:@skin-header-z;
+	
+}
+
+#skin-content{
+	position:absolute;
+	top:0;
+	height:100%;
+	width:100%;
+
+	#skin-section
+	{
+		
+		position:absolute;
+		height:100%;
+		width:(@skin-section-width);
+		float:left;
+		/*background-color:#CCC;*/
+		
+		#skin-iframe
+		{
+			position:absolute;
+			top:@skin-header-height;
+			width:@skin-iframe-width;
+			height:@skin-iframe-height;
+			/*background-color:@skin-iframe-color;*/
+			
+			border-style:dotted;
+			border-width:medium;
+			border-color:@skin-iframe-color;
+			
+		}
+		#skin-paging
+		{
+			position:absolute;
+			bottom:0;
+			width:@skin-iframe-width;
+			height:@skin-paging-height;
+			/*background-color:@paging-color;*/
+			z-index:@skin-paging-z;
+		}
+	}
+			
+	#skin-aside 
+	{
+		padding-top:@skin-header-height;
+		
+		left:@skin-section-width;
+		height:100%;
+		width:auto;
+		margin-left:(@skin-section-width);
+		/*background-color:@aside-color;*/
+		
+
+	}
+}	
+	

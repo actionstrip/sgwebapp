@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="intro.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130739638714075246" remote="130739638710000000" Dst="0" />
-<file name="intro.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130739638711355090" remote="130739638710000000" Dst="0" />
-<file name="style.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130742371097655564" remote="130742371090000000" Dst="0" />
-<file name="style.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130742371095865461" remote="130742371090000000" Dst="0" />
-<file name="study.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130742363364193235" remote="130742363360000000" Dst="0" />
-<file name="study.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130742363362353130" remote="130742363360000000" Dst="0" />
-<file name="style___.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130733799792745967" remote="130733799790000000" Dst="0" />
-<file name="test.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665301985099" remote="130741665300000000" Dst="0" />
-<file name="test.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665299954983" remote="130741665290000000" Dst="0" />
-<file name="read.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665143366026" remote="130741665140000000" Dst="0" />
-<file name="read.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665141615926" remote="130741665140000000" Dst="0" />
-<file name="open.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665083132581" remote="130741665080000000" Dst="0" />
-<file name="open.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665081532489" remote="130741665080000000" Dst="0" />
-<file name="realize.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665181578212" remote="130741665180000000" Dst="0" />
-<file name="realize.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665180338141" remote="130741665180000000" Dst="0" />
-<file name="strong.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665223530611" remote="130741665220000000" Dst="0" />
-<file name="strong.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665222090529" remote="130741665220000000" Dst="0" />
-<file name="summary.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665261062758" remote="130741665260000000" Dst="0" />
-<file name="summary.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130741665259612675" remote="130741665250000000" Dst="0" />
+<file name="intro.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743102574191850" remote="130743102570000000" Dst="0" />
+<file name="intro.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743102574201851" remote="130743102570000000" Dst="0" />
+<file name="style.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743173040002264" remote="130743173040000000" Dst="0" />
+<file name="style.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743171826302845" remote="130743171820000000" Dst="0" />
+<file name="study.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743102574281856" remote="130743102570000000" Dst="0" />
+<file name="study.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743102574281856" remote="130743102570000000" Dst="0" />
+<file name="style___.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743102574311857" remote="130743102570000000" Dst="0" />
+<file name="test.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743224602991499" remote="130743224600000000" Dst="0" />
+<file name="test.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743224600871377" remote="130743224600000000" Dst="0" />
+<file name="read.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743224849645606" remote="130743224840000000" Dst="0" />
+<file name="read.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743224848145521" remote="130743224840000000" Dst="0" />
+<file name="open.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743175648791479" remote="130743175640000000" Dst="0" />
+<file name="open.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743175646931372" remote="130743175640000000" Dst="0" />
+<file name="realize.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743171137323437" remote="130743171130000000" Dst="0" />
+<file name="realize.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743171135883355" remote="130743171130000000" Dst="0" />
+<file name="strong.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743160661944280" remote="130743160660000000" Dst="0" />
+<file name="strong.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743160660314187" remote="130743160660000000" Dst="0" />
+<file name="summary.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743224808853273" remote="130743224800000000" Dst="0" />
+<file name="summary.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743224807583201" remote="130743224800000000" Dst="0" />
+<file name="skin.css" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743161914665931" remote="130743161910000000" Dst="0" />
+<file name="skin.less" server="C:/inetpub/wwwroot/dev/sgwebapp/" local="130743161913065840" remote="130743161910000000" Dst="0" />
 </dwsync>

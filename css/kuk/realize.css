@@ -12,54 +12,6 @@ style.css 에서 통합되므로
   /*background-color:#FFC;*/
 
 }
-#realize-skin #header {
-  position: relative;
-  height: 40px;
-  width: 100%;
-  /*background-color:#06C;*/
-
-  z-index: 10;
-}
-#realize-skin #content {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-}
-#realize-skin #content #section {
-  position: absolute;
-  height: 100%;
-  width: 1113px;
-  float: left;
-  /*background-color:#CCC;*/
-
-}
-#realize-skin #content #section #iframe {
-  position: absolute;
-  top: 40px;
-  width: 1113px;
-  height: 640px;
-  /*background-color:@realize-iframe-color;*/
-
-  border-style: dotted;
-  border-width: medium;
+#realize-skin #skin-content #skin-section #skin-iframe {
   border-color: #c9164e;
-}
-#realize-skin #content #section #paging {
-  position: absolute;
-  bottom: 0;
-  width: 1113px;
-  height: 40px;
-  /*background-color:@paging-color;*/
-
-  z-index: 3;
-}
-#realize-skin #content #aside {
-  padding-top: 40px;
-  left: 1113px;
-  height: 100%;
-  width: auto;
-  margin-left: 1113px;
-  /*background-color:@aside-color;*/
-
 }

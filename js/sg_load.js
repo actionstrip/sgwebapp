@@ -29,11 +29,11 @@ SGE.loadSkin=function(str , $copyId,$pasteId){
 	console.log("skinUrl=" + skinUrl);
 	$($pasteId).load(skinUrl,function(txt,txtStatus,xhr){
 		trace("onComplete skin load");
-		 console.timeStamp("onComplete skin loads");
+		 //console.timeStamp("onComplete skin loads");
 
 		 $(this).waitForImages(function () {
     	    trace("오 로드완료네");
-			console.timeStamp("onComplete waitForImages");
+			//console.timeStamp("onComplete waitForImages");
 		  	SGE.onCompleteLoadSkin(this);
 	    });
 
